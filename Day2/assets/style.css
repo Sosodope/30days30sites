@@ -1,0 +1,18 @@
+header{
+	background: #5EE5D3;
+}
+nav ul{
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 50px 0;
+}
+nav li{
+	padding-left: 20px; 
+	padding-right: 20px; 
+}
+nav a{
+	text-decoration: none;
+	color: #F4CE50;
+}
