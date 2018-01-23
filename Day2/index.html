@@ -15,9 +15,9 @@
 		<img src="assets/img/logo.png" class="logo">
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li><!--
-				--><li><a href="#">Venue</a></li><!--
-				--><li><a href="#">Contact</a></li>
+				<li><a href="#hero">Home</a></li><!--
+				--><li><a href="#about">Venue</a></li><!--
+				--><li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -46,19 +46,24 @@
 		<section id="contact">
 			<h3>Get in touch with us</h3>
 			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Email</a></li>
+				<li><a href="#" class="links">Facebook</a></li>
+				<li><a href="#" class="links">Twitter</a></li>
+				<li><a href="#" class="links">Email</a></li>
 			</ul>
 		</section>
 	</div>
 
 	<footer>
 		<ul>
-			<li>Created with love</li>
-			<li>&copy;</li>
+			<li>Created with <span id="love">love</span></li>
+			<li class="cp">&copy;</li>
 		</ul>
 	</footer>	
 
+	<script type="text/javascript">
+		var copy = document.querySelector(".cp");
+		var year = new Date().getFullYear();
+		copy.textContent += year;
+	</script>
 </body>
 </html>

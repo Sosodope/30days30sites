@@ -58,7 +58,7 @@ body {
     font-size: 1.5em;
 }
 header{
-	background: #1761D1;
+	background: #98b9ea;
 	height: 35px;
     padding: 35px;
 }
@@ -122,13 +122,33 @@ section {
 #about h3{
 	position: absolute;
     top: 5%;
-    font-size: 2em;
 }
-#about h4{
-	font-size: 1.5em;
+#about h3, #about h4{
+	font-size: 2em;
+	text-shadow: 2px 2px 2px #fff;
+}
+#contact{
+	display: block;
+}
+#contact h3{
+	padding: 150px;
+    font-size: 1.8em;
+}
+#contact a{
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #F4CE50;
+	text-shadow: 2px 2px 2px #000;
+}
+#contact a:hover{
+	color: #000;
+	text-shadow: 2px 2px 2px #fff;
 }
 .invite{
 	padding: 25%;
+}
+#love{
+	text-shadow: 3px 3px 3px #f00;
 }
 footer {
     text-align: center;
@@ -139,7 +159,7 @@ footer {
     font-size: 1.5em;
 	padding: 15px;
 	border: 2px solid #1761D1;
-	border-radius: 10px;
+	border-radius: 25px;
 	text-decoration: none;
 }
 .btn:hover{
