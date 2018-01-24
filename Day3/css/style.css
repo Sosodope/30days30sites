@@ -87,9 +87,19 @@ body {
   height: 100vh;
 /*   text-shadow: 0 1px 3px rgba(0,0,0,.5); */
 }
+h1{
+  line-height: 1.5;
+  font-size: 3em;
+  text-shadow: 5px 5px 5px #000;
+}
 h3{
   font-size: 2em;
   font-weight: 700;
+}
+.lead{
+  font-size: 1.5em;
+  font-style: italic;
+  text-shadow: 2px 2px 2px #000;
 }
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -107,6 +117,7 @@ h3{
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+  z-index: 2;
 }
 
 /* Padding for spacing */
@@ -132,12 +143,6 @@ h3{
   text-decoration: none;
   font-size: 1.5em;
 }
-/*.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}*/
 
 @media (min-width: 768px) {
   .masthead-brand {
@@ -160,7 +165,16 @@ h3{
   padding: 10px 20px;
   font-weight: bold;
 }
-
+.overlay{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #afc6d8;
+  z-index: 1;
+  opacity: 0.25;
+}
 
 /*
  * Footer
@@ -206,27 +220,37 @@ h3{
   }
 }
 video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
 /*  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat; */
   background-size: cover;
   transition: 1s opacity;
 }
 .btn{
-  border-radius: 0;
+  border-radius: 5px;
   padding: 10px;
   outline: none;
+  width: 260px;
+  height: 40px;
+  font-size: 1.1em;
+  background: #f78f27;
+  border: none;
 }
 input[type="text"]{
-  padding: 20px;
+  margin: 10px;
+  padding: 5px;
   outline: none;
+  height: 35px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 .mastfoot ul{
   margin-top: 30px;
