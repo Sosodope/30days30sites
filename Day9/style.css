@@ -7,8 +7,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
-  color: #ddd;
+  font-family: 'Lato', sans-serif;
+  color: #000;
   overflow-x: hidden;
   font-size: 1em;
   background: linear-gradient(180deg, #1caff6 0, #5accec 100%);
@@ -49,7 +49,7 @@ nav{
   height: 60%;
   margin: auto;
 }
-.download img{
+.install img{
     position: absolute;
     right: 10%;
 }
@@ -63,9 +63,11 @@ nav{
 .header h2{
   position: absolute;
   top: 22%;
-  left: 30%;
+  left: 25%;
   text-shadow: 3px 3px 3px #000;
-  font-size: 3em;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 .header h4{
   position: absolute;
@@ -75,12 +77,28 @@ nav{
   font-size: 1.3em;
 }
 .content {
-  background-color: #EAEDF0;
-  height: 600px;
+  height: 500px;
+  /*background: #fff;*/
 }
-
+.content img{
+  width: 45%;
+  z-index: 2;
+}
+.content .message{
+  z-index: 2;
+}
+.background{
+  background: #fff;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  height: 62%;
+  width: 67%;
+  position: absolute;
+  z-index: 1;
+}
 .sign-up {
-  background-color: #D6E9FE;
+  background-color: rgba(120, 200, 250, 0.4);
+  flex-direction: column;
 }
 .download{
   background: url(http://dzvpwvcpo1876.cloudfront.net/blue-app-store.svg) no-repeat;
@@ -95,6 +113,16 @@ nav{
 .feats p{
   padding: 0 10px;
   text-align: justify;
+}
+footer{
+  background: #EAEDF0;
+  display: block;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-top: 30px;
+  color: #000;
+  text-align: center;
+  font-size: 0.7em;
 }
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
@@ -126,5 +154,35 @@ nav{
   .feature-2,
   .feature-3 {
     width: 50%;
+  }
+  .background{
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px){
+  .header h2{
+    font-size: 3em;
+    top: 11%;
+    right: 56%;
+    text-align: center;
+  }
+  .header h4{
+    top: 50%;
+    left: 0%;
+    text-align: center;
+    text-shadow: none;
+    color: #000;
+  }
+  .logo{
+    width: 50%;
+    height: 100%;
+    margin-top: -15px;
+  }
+  .download{
+    height: 100px;
+    padding: 0 25px;
+  }
+  .background{
+    display: none;
   }
 }
