@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #ddd;
+  overflow-x: hidden;
+  font-size: 1em;
+  background: linear-gradient(180deg, #1caff6 0, #5accec 100%);
+}
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo {
+  background: url("img/pokemon_go_logo.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 13%;
+  height: 80%;
+}
+.logo h1{
+  text-indent: -10000px;
+}
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  /*background-color: #5995DA;*/
+  height: 80px;
+}
+nav{
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+}
+.left, .right{
+  width: 80%; 
+  height: 60%;
+  margin: auto;
+}
+.download img{
+    position: absolute;
+    right: 10%;
+}
+.header {
+  display: inline-block;
+  background-color: #B2D6FF;
+  background: url("img/ultra-ball.svg") no-repeat;
+  background-position: center;
+  color: #fff;
+}
+.header h2{
+  position: absolute;
+  top: 22%;
+  left: 30%;
+  text-shadow: 3px 3px 3px #000;
+  font-size: 3em;
+}
+.header h4{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  text-shadow: 3px 3px 3px #000;
+  font-size: 1.3em;
+}
+.content {
+  background-color: #EAEDF0;
+  height: 600px;
+}
+
+.sign-up {
+  background-color: #D6E9FE;
+}
+.download{
+  background: url(http://dzvpwvcpo1876.cloudfront.net/blue-app-store.svg) no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 300px;
+  width: 200px;
+}
+.feats{
+  flex-direction: column;
+}
+.feats p{
+  padding: 0 10px;
+  text-align: justify;
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.3%;
+  }
+  .header {
+    height: 60vh;
+    margin-bottom: 50px;
+  }
+  .sign-up {
+  height: 200px;
+  order: 1;
+  }
+  .content {
+    order: 2;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .sign-up,
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 50%;
+  }
+}
