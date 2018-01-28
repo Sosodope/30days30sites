@@ -1,0 +1,32 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+section{
+	text-align: center;
+}
+section li{
+	list-style: none;
+	width: 30%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10%;
+}
+section li:last-child{
+	margin-right: 0;
+}
+section p{
+	text-align: justify;
+}
+section img{
+	width: 50%;
+}
+@media all and (max-width: 760px){
+	section li{
+		width: 90%;
+	}
+}
