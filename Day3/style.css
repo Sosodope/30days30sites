@@ -1,0 +1,106 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 
+   CUSTOM STYLE
+*/
+body{
+}
+.header-wrapper{
+	background: yellow;
+	background: url("img/paro.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+	color: #fff;
+	text-shadow: 3px 3px 5px #000;
+}
+.footer-wrapper{
+	background: #00bcd4ad;
+	height: 120px;
+	color: #fff;
+	text-shadow: 3px 3px 5px #000;
+}
+.container{
+	margin: 0 auto;
+	max-width: 960px;
+}
+.menu{
+	float: right;
+	margin-top: 50px;
+}
+.menu a{
+	padding: 5px 10px;
+	margin: 15px;
+}
+.menu a, .btn{
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 3px 3px 5px #000;
+}
+header img{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+#banner{
+	clear: right;
+	margin-top: 50px;
+	width: 50%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.btn{
+	display: block;
+	margin: 30px;
+}
+h1{
+	font-size: 4em;
+}
