@@ -50,21 +50,22 @@ table {
    CUSTOM STYLE
 */
 body{
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-wrapper{
 	background: yellow;
 	background: url("img/paro.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 60vh;
+/*	height: 60vh;*/
 	color: #fff;
 	text-shadow: 3px 3px 5px #000;
 }
 .footer-wrapper{
-	background: #00bcd4ad;
-	height: 120px;
-	color: #fff;
-	text-shadow: 3px 3px 5px #000;
+	color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
 }
 .container{
 	margin: 0 auto;
@@ -78,6 +79,10 @@ body{
 	padding: 5px 10px;
 	margin: 15px;
 }
+.menu a:hover, .menu a:focus, .menu a:active{
+	color: #ffc107;
+	border-bottom: 3px solid #ffc107; 
+}
 .menu a, .btn{
 	text-decoration: none;
 	color: #fff;
@@ -89,18 +94,47 @@ header img{
 	left: 5%;
 }
 #banner{
-	clear: right;
-	margin-top: 50px;
-	width: 50%;
-	margin-left: 20%;
-	margin-right: 20%;
-	padding-left: 10%;
-	padding-right: 10%;
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+#banner h1 {
+  font-size: 5em;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+#banner p {
+  font-size: 24px;
+  font-weight: 100;
 }
 .btn{
-	display: block;
+	display: inline-block;
 	margin: 30px;
+	padding: 3px 15px;
+	border-radius: 5px;
+	border: 2px solid #fff;
 }
-h1{
-	font-size: 4em;
+.btn:hover, .btn:focus, .btn:active{
+	background: #ffc107;
+	color: #000;
+	text-shadow: none;
+	font-weight: 400;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+header:before,
+header:after{
+	content: "";
+	display: table;
+}
+header:after{
+	clear: both;
+}
+header{
+	clear: both;
+	*zoom: 1;
 }
