@@ -100,20 +100,40 @@ h1{
 	width: 30%;
 	border-radius: 5%;
 }
-.second-section{
+.second-section, .third-section{
 	margin-top: 20%;
 	margin-bottom: 15%;
 	padding: 20px 2px;
 }
-.second-section h4{
+.second-section h4, .third-section h4{
 	text-align: center;
 	margin-bottom: 20px;
-	text-decoration: underline;
 	font-weight: 700;
 	color: #e6562e;
 }
 .second-section p{
 	text-align: justify;
+}
+.third-section p{
+	margin-bottom: 20px;
+	
+}
+.third-section .col-1-3{
+	padding-top: 5px;
+	vertical-align: top;
+	text-align: center;
+}
+.btn{
+	text-decoration: none;
+	padding: 10px;
+	border: 2px solid #e6562e;
+	background: #e6562e;
+	border-radius: 5px;
+	color: #fff;
+}
+.btn:hover, .btn:focus{
+	border: 2px solid #ffeb3b;
+	background: #ffeb3b;
 }
 blockquote{
 	font-size: 1.5em;
