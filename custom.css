@@ -52,21 +52,28 @@ table {
   ========================================
 */
 body{
-  background: #69D1C5;
-  color: #888;
+  background: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  color: #fff;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  max-width: 960px;
-  margin: 0 auto;
 }
 h1, h2, h3, h4, a {
   color: #21897E;
 }
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
 a{
 	text-decoration: none;
+	color: #fff;
 }
 a:hover{
 	color: #a9b2b9;
 }
 header{
-	margin: 30px 0;
+	padding: 30px 0;
+	font-size: 2em;
+}
+section a{
+	margin-left: 35px;
 }
