@@ -1,0 +1,57 @@
+body{
+	font-family: Lato, "Helvetica Neue", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+nav{
+	text-align: center;
+	background: #FFC107;
+}
+nav a{
+	padding: 0 5%;
+	text-decoration: none;
+}
+.products{
+	display: inline-block;
+	width: 10%;
+}
+.store{
+	text-align: right;
+  margin: 15px 0;
+}
+.store a{
+	padding: 0 2%;
+	text-decoration: none;
+}
+.msg-active{
+	display: block;
+	width: 30%;
+  padding-top: 15%;
+}
+.message{
+	display: none;
+}
+.banner{
+	height: 70vh;
+	background: orange;
+}
+.btn{
+	text-decoration: none;
+	border: 2px solid purple;
+	border-radius: 5px;
+	padding: 10px;
+}
+.bio{
+  height: 300px;
+  padding-top: 5%;
+  text-align: center;
+}
+#arrow a{
+  position: fixed;
+  bottom: 5%;
+  right: 4%;
+}
