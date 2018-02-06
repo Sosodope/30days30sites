@@ -1,7 +1,17 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
 body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Anonymous Pro', monospace;
+}
+.main-wrapper{
+	min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
 }
 .container{
 	max-width: 960px;
@@ -78,6 +88,61 @@ footer p{
 	top: 58%;
   left: 46%;
 }
+#menu, .toggle-menu{
+	display: none;
+}
+@media all and (max-width: 960px){
+	header h1{
+		width: 100%;
+    display: block;
+    text-align: center;
+	}
+	nav{
+		width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 10px;
+	}
+	#text{
+		left: 44%;
+	}
+}
+@media all and (max-width: 460px){
+	header h1{
+		width: 100%;
+    display: block;
+    text-align: center;
+	}
+	nav a{
+		display: none;
+	}
+.toggle-menu{
+		display: block;
+		padding: 0;
+	}
+.toggle-menu li{
+		list-style: none;
+		text-align: center;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+	}
+.toggle-menu li:last-child{
+		border-bottom: none;
+	}
+.toggle-menu a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.bright-box{
+		left: 20%;
+	}
+	#text{
+		top: 80%;
+    left: 40%;
+
+	}
+}
+/*Animation*/
 @keyframes zoom {
   0% {
     transform: scale(0.5);
