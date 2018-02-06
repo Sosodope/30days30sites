@@ -8,13 +8,12 @@ body{
 	margin: 0 auto;
 }
 .wrapper{
-	background: #ffc107;
+	background: #e91e6378;
 }
 .box{
   position: relative;
   display: block;
-  margin: auto;
-  margin-top: 8%;
+  margin-top: 5%;
   height: 600px;
   width: 600px;
 }
@@ -47,25 +46,37 @@ footer p{
 }
 .btn{
 	text-decoration: none;
-	border: 2px solid #DB7C65;
-	background: #DB7C65;
-	color: #000;
+	border: 2px solid #e91e6300;
+	background: #e91e63a6;
+	color: #fff;
 	padding: 8px;
   border-radius: 20px;
+  transition: all 0.5s ease-in-out;
 }
-.bright-star{
+.btn:hover{
+	color: #000;
+}
+.bright-box{
 	background: #DB7C65;
   z-index: 3;
   position: absolute;
-  left: 38%;
+  left: 29%;
   top: 10%;
   width: 23%;
   height: 23%;
+  padding: 35px;
   animation: zoom 10s infinite;
 }
+.bright-box:hover{
+	opacity: 0.5;
+}
 .main{
-	/*height: 80vh;*/
 	text-align: center;
+}
+#text{
+	position: absolute;
+	top: 58%;
+  left: 46%;
 }
 @keyframes zoom {
   0% {
