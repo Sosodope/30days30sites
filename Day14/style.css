@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 .page {
   display: flex;
@@ -13,13 +14,26 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid #5995DA;
 }
 
 .menu {
   background-color: #5995DA;
   height: 80px;
+  display: block;
+  padding-left: 20px;
 }
-
+.menu nav, .menu h1{
+  display: inline-block;
+}
+.menu nav{
+  margin-left: 50%;
+}
+.menu a{
+  padding-right: 10px;
+  text-decoration: none;
+  color: #000;
+}
 .header {
   background-color: #B2D6FF;
 }
@@ -29,7 +43,7 @@ body{
   height: 600px;
 }
 
-.sign-up {
+.contact {
   background-color: #D6E9FE;
 }
 
@@ -46,7 +60,7 @@ body{
 }
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  .sign-up,
+  .contact,
   .feature-1,
   .feature-2,
   .feature-3 {
@@ -61,13 +75,13 @@ body{
   }
   .feature-1,
   .feature-2,
-  .feature-3 {
+  .feature-3{
     width: 33.3%;
   }
   .header {
     height: 400px;
   }
-  .sign-up {
+  .contact {
   height: 200px;
   order: 1;
 }
