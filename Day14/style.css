@@ -1,13 +1,19 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .page {
   display: flex;
   flex-wrap: wrap;
 }
-
+footer{
+  width: 100%;
+  height: 50px;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+}
 .section {
   width: 100%;
   height: 300px;
@@ -34,19 +40,10 @@ body{
   text-decoration: none;
   color: #000;
 }
-.header {
-  background-color: #B2D6FF;
-}
-
 .content {
   background-color: #EAEDF0;
   height: 600px;
 }
-
-.contact {
-  background-color: #D6E9FE;
-}
-
 .feature-1 {
   background-color: #F5CF8E;
 }
@@ -58,6 +55,54 @@ body{
 .feature-3 {
   background-color: #C8C6FA;
 }
+.features{
+  display: block;
+  text-align: center;
+}
+.features p{
+  font-size: 15px;
+  margin: 10px 20px 0 20px;
+}
+.features img{
+  margin: 30px;
+}
+form{
+  text-align: center;
+}
+input{
+  width: 80%;
+  border: 1px solid #5995DA;
+  padding: 10px 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+input[type="email"]:hover, input[type="submit"]:hover{
+  background: #5995DA;
+}
+input[type="submit"]:hover{
+  transform: scale(1.1);
+}
+.logo{
+  width: 30%;
+}
+.intro{
+  width: 45%;
+  text-align: right;
+}
+.btn{
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #5995DA; 
+  border-radius: 15px;
+  color: #000;
+}
+.btn:hover{
+  background: #F44336;
+  border: none;
+  color: #fff;
+}
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .contact,
@@ -65,6 +110,31 @@ body{
   .feature-2,
   .feature-3 {
     width: 50%;
+  }
+  .menu nav, .menu h1{
+    display: block;
+  }
+  .menu{
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .menu nav{
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 400px){
+  .menu nav, .menu h1{
+    display: block;
+  }
+  .menu{
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .menu nav{
+    margin-left: 0;
+  }
+  .logo {
+    width: 40%;
   }
 }
 /* Desktop Styles */
@@ -84,9 +154,9 @@ body{
   .contact {
   height: 200px;
   order: 1;
-}
-.content {
+  }
+  .content {
   order: 2;
-}
+  }
 }
 
