@@ -2,3 +2,63 @@ body{
 	margin: 0;
 	padding: 0;
 }
+.wrapper{
+	margin: 0 auto;
+	max-width: 960px;
+}
+#members{
+	text-align: right;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+#members a{
+	padding-right: 5px;
+	text-decoration: none;
+	color: #172573;
+}
+#ctas h1{
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 35px;
+	margin-right: 55%;
+}
+#ctas a{
+	padding: 12px;
+	text-decoration: none;
+	color: #172573;
+	font-weight: bold;
+	border: 2px solid #4CAF50;
+}
+#ctas a:hover{
+	background: #4CAF50;
+}
+nav{
+	margin-left: 15px;
+}
+nav a{
+  text-decoration: none;
+  font-size: 0.8em;
+  padding: 2px 6px;
+  color: #4CAF50;
+}
+nav a:hover{
+	border-bottom: 2px solid #172573;
+}
+.banner{
+	background: url("img/frog.jpeg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 350px;
+	text-align: right;
+}
+.banner h3{
+  padding: 40px 25%;
+}
+.banner .btn{
+  margin-right: 25%;
+  text-decoration: none;
+  border: 2px solid blue;
+  padding: 8px;
+  border-radius: 20px;
+  color: greenyellow;
+}
