@@ -1,0 +1,49 @@
+body{
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+header{
+	height: 100vh;
+	z-index: 2;
+}
+.banner{
+	background: #af0129;
+	background: url("../img/bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 10px;
+}
+.overlay{
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #248bff;
+	z-index: 1;
+	opacity: 0.25;
+	padding-bottom: 10px;
+}
+.main-cta{
+	text-align: center;
+	margin-top: 20%;
+}
+.btn{
+	text-decoration: none;
+	border: 2px solid #248bff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #fff;
+	background: #24acff;
+}
+.contact-info{
+	height: 10vh;
+	width: 100%;
+}
+nav{
+	text-align: center;
+	margin-top: -40px;
+    margin-bottom: 25px;
+}
