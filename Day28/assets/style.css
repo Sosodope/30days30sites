@@ -49,9 +49,44 @@ nav a:hover, nav a:active{
   color: #fff;
   font-size: 1.3em;
 }
+.services{
+	height: 30rem;
+	text-align: center;
+}
+.services .wrapper{
+	border-bottom: 1px solid #ddddddab;
+}
+.services .wrapper h3{
+	margin-top: 100px;
+	margin-bottom: 55px;
+	font-size: 2em;
+}
+.features{
+	display: inline-block;
+	padding-right: 5%;
+	padding-bottom: 85px;
+}
+.features:last-of-type{
+	padding-right: 0;
+}
 header{
 	padding-top: 10px;
 }
 footer{
 	text-align: center;
+	height: 15rem;
+	margin-top: 45px;
+}
+footer a{
+  padding-left: 10px;
+  padding-right: 10px
+}
+.fa-twitter{
+	color: #03A9F4;
+}
+.fa-facebook-f{
+	color: #3f57b5;
+}
+.fa-instagram{
+	color: #9c27b0;
 }
