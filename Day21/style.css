@@ -1,0 +1,91 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5{
+	font-family: 'Barlow', sans-serif;
+}
+.container{
+	margin: 0 auto;
+	max-width: 660px;
+}
+.banner{
+	background: url("fashion.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+	text-align: center;
+	padding-top: 1px;
+}
+.banner h3{
+	font-size: 3em;
+	color: #fff;
+	text-shadow: 2px 1px 1px #000;
+}
+.btn{
+	text-decoration: none;
+	padding: 10px;
+	background: #01f0ea;
+	border-radius: 5px;
+	color: #fff;
+}
+.mail{
+	text-align: justify;
+	margin-bottom: 30px;
+}
+.mail h5{
+	font-size: 2em;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+.mail h5:first-letter{
+	font-size: 3em;
+} 
+.mail #end{
+	padding-bottom: 5px; 
+	border-bottom: 2px solid #ddd;
+}
+.images{
+	padding: 10px 15px;
+	border: 5px solid #01f0ea;
+	text-align: center;
+}
+.images ul{
+	padding-left: 0;
+}
+.images li{
+	display: inline-block;
+	list-style: none;
+	width: 48%;
+	height: 30vh;
+	position: relative;
+}
+.images h5, .images h5:first-letter{
+	font-size: 1.3em;
+}
+.images h5{
+	position: absolute;
+    bottom: 28px;
+    left: 53px;
+}
+.images a{
+	position: absolute;
+    bottom: -20px;
+    left: 60px;
+}
+#one{
+	background: url("set.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+#two{
+	background: url("denim.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+footer{
+	text-align: center;
+}
